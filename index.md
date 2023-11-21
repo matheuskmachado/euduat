@@ -5,6 +5,11 @@
             try {
                 embeddedservice_bootstrap.settings.language = 'pt_BR';
 
+                window.addEventListener("onEmbeddedMessagingReady", () => {
+
+                    console.log("onEmbeddedMessagingReadyEUD>> ");
+                });
+
                 embeddedservice_bootstrap.init(
                     '00D3B000000IPck',
                     'CRCEudora',
